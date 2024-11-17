@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company X | Homepage</title>
+    <style>
+        /* https://lospec.com/palette-list/cc-29 */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        :root {
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #212123;
+            font-size: 24pt;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            background-color: #45444f;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 0 20%;
+            background-color: #f2f0e5;
+        }
+
+        header {
+            background-color: #b8b5b9;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        header>* {
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        header> :first-child {
+            background-color: #646365;
+            color: #ede19e;
+            text-align: center;
+        }
+
+        header> :nth-child(2) {
+            flex-grow: 2;
+        }
+
+        header>* {
+            flex-grow: 1;
+        }
+
+        h1 {
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .company-img {
+            padding: 0 2rem;
+            width: calc(100% - 2 * 2rem);
+        }
+
+        p {
+            padding: 0 20px 15px;
+            text-align: center;
+        }
+
+        .products {
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .product {
+            padding: 0.2rem;
+            width: 30%;
+            background-color: #b8b5b9;
+        }
+
+        .product-header {
+            text-align: center;
+        }
+
+        .product-label {
+            color: #1d1d1d;
+        }
+
+        .product-img {
+            width: 100%;
+        }
+
+        .product-text {
+            font-size: 16pt;
+        }
+
+        .contact-us {
+            padding: 1rem 2rem;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #map {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header id="home">
+            <span>Site Logo</span>
+            <span class="virtual-spacing-span"></span>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact-us">Contact</a>
+        </header>
+        <h1>CompanyX</h1>
+        <img src="jobs.jpg" class="company-img" alt="this is steve jobs, he is NOT the CEO of our company">
+        <p>Bringing value to our customers.</p>
+        <div class="products" id="products">
+            <div class="product">
+                <b class="product-header">Employer</b>
+                <img class="product-img" src="thispersondoesnotexist1.jpg" alt="not a phone really, mostly a dude">
+                <i class="product-label">This dude</i>
+                <p class="product-text">September, be kind<p>
+            </div>
+            <div class="product">
+                <b class="product-header">The</b>
+                <img class="product-img" src="thispersondoesnotexist2.jpg" alt="an image of a person from thispersondoesnotexist.com">
+                <i class="product-label">AAA 2</i>
+                <p class="product-text">The 1990s saw the rise of a truly digital age, with the effects of globalization
+                    becoming increasingly apparent. It was a decade characterized by girl power, rave culture, and
+                    political instability.</p>
+            </div>
+            <div class="product">
+                <b class="product-header">My Dad</b>
+                <img class="product-img" src="thispersondoesnotexist3.jpg" alt="not really my dad, again a dude that does not exist">
+                <i class="product-label">Product 3</i>
+                <p class="product-text">
+                    Every since I was children, I were looking for him.
+                </p>
+            </div>
+        </div>
+        <div class="contact-us" id="contact-us">
+            <div class="contact-us-info">
+                <b>Contact us!</b><br>
+                <i>Visit us at:<br>
+                    CompanyX<br>
+                    Karaportti 2<br>
+                    02340 Espoo<br>
+                    Finland<br>
+                    Email: <a href="mailto:info@metropolia.fi">info@metropolia.fi</a><br>
+                    Phone <a>+358 (0)401231233</a>
+                </i>
+            </div>
+            <a class="contact-us-map" href="geo:60.224110339079,24.758752084085"><img id="map" src="map.png" alt="a maps that shows you where we are"></a>
+        </div>
+    </main>
+</body>
+
+</html>
